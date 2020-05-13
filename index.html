@@ -2,33 +2,38 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Calculando</title>
+	<title>Calculadora</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<form class="calculator" name="calc">
-		<input class="value" type="text" name="txt" readonly="">
+	<div class="container">
+		<form class="calculator" name="calc">
+			<input id="screen" class="value" type="text" name="txt" readonly="">
 
-		<div class="sub">Calculando</div>
+			<div class="sub">Calculadora</div>
 
-		<span class="num clear" onclick="document.calc.txt.value = ''">C</span>
-		<span class="num" onclick="document.calc.txt.value += '/'">/</span>
-		<span class="num" onclick="document.calc.txt.value += '*'">*</span>
-		<span class="num" onclick="document.calc.txt.value += '7'">7</span>
-		<span class="num" onclick="document.calc.txt.value += '8'">8</span>
-		<span class="num" onclick="document.calc.txt.value += '9'">9</span>
-		<span class="num" onclick="document.calc.txt.value += '-'">-</span>
-		<span class="num" onclick="document.calc.txt.value += '4'">4</span>
-		<span class="num" onclick="document.calc.txt.value += '5'">5</span>
-		<span class="num" onclick="document.calc.txt.value += '6'">6</span>
-		<span class="num plus" onclick="document.calc.txt.value += '+'">+</span>
-		<span class="num" onclick="document.calc.txt.value += '3'">3</span>
-		<span class="num" onclick="document.calc.txt.value += '2'">2</span>
-		<span class="num" onclick="document.calc.txt.value += '1'">1</span>
-		<span class="num" onclick="document.calc.txt.value += '0'">0</span>
-		<span class="num" onclick="document.calc.txt.value += '00'">00</span>
-		<span class="num" onclick="document.calc.txt.value += '.'">.</span>
-		<span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
-	</form>
+			<span id="c" class="num clear" onclick="document.calc.txt.value = ''">C</span>
+			<span id="p1" class="num btn" onclick="document.calc.txt.value += '('">(</span>
+			<span id="p2" class="num btn" onclick="document.calc.txt.value += ')'">)</span>
+			<span id="bar" class="num btn" onclick="document.calc.txt.value += '/'">/</span>
+			<span id="seven" class="num" onclick="document.calc.txt.value += '7'">7</span>
+			<span id="eight" class="num" onclick="document.calc.txt.value += '8'">8</span>
+			<span id="nine" class="num" onclick="document.calc.txt.value += '9'">9</span>
+			<span id="mult" class="num btn" onclick="document.calc.txt.value += '*'">*</span>
+			<span id="four" class="num" onclick="document.calc.txt.value += '4'">4</span>
+			<span id="five" class="num" onclick="document.calc.txt.value += '5'">5</span>
+			<span id="six" class="num" onclick="document.calc.txt.value += '6'">6</span>
+			<span id="menos" class="num btn" onclick="document.calc.txt.value += '-'">-</span>
+			<span id="one" class="num" onclick="document.calc.txt.value += '1'">1</span>
+			<span id="two" class="num" onclick="document.calc.txt.value += '2'">2</span>
+			<span id="three" class="num" onclick="document.calc.txt.value += '3'">3</span>
+			<span id="plus" class="num plus btn" onclick="document.calc.txt.value += '+'">+</span>
+			<span id="zero" class="num" onclick="document.calc.txt.value += '0'">0</span>
+			<span id="dot" class="num" onclick="document.calc.txt.value += '.'">.</span>
+			<span id="equal" class="num btn" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
