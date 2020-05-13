@@ -28,13 +28,15 @@ body{
 	font-size: 3vh;
 	font-weight: 700;
 	background-color: #eee;
+	cursor: default;
 }
 
 .calculator .sub{
 	position: absolute;
 	padding: 4px;
+	font-size: 2vh;
 	font-style: italic;
-	color: #FF7302;
+	color: #0b31ff;
 	font-weight: 400;
 }
 
@@ -47,6 +49,7 @@ body{
 	font-size: 2.8vh;
 	place-items: center;
 	border: 1px solid rgba(0,0,0,.1);
+	cursor: pointer;
 }
 
 .calculator span:active{
@@ -59,8 +62,6 @@ body{
 }
 
 .calculator span.clear{
-	grid-column: span 2;
-	width: 24vh;
 	background-color: #0b31ff;
 }
 
@@ -69,6 +70,6 @@ body{
 	height: 24vh;
 }
 
-.calculator span.equal{
-	background-color: #FF7302;
+.calculator span.btn{
+	color: #0bccff;
 }
