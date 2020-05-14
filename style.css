@@ -23,22 +23,25 @@ body{
 	height: 20vh;
 	text-align: right;
 	border: none;
+	border-top-left-radius: 2vh;
+	border-top-right-radius: 2vh;
 	outline: none;
 	padding: 10px;
-	font-size: 3vh;
+	color: #0c2835;
+	font-size: 3.4vh;
 	font-weight: 700;
 	background-color: #eee;
 	cursor: default;
 }
-
+/*
 .calculator .sub{
 	position: absolute;
 	padding: 4px;
 	font-size: 2vh;
 	font-style: italic;
-	color: #0b31ff;
+	color: #091921;
 	font-weight: 400;
-}
+}*/
 
 .calculator span{
 	display: grid;
@@ -68,8 +71,13 @@ body{
 .calculator span.plus{
 	grid-row: span 2;
 	height: 24vh;
+	border-bottom-right-radius: 2vh;
 }
 
 .calculator span.btn{
 	color: #0bccff;
+}
+
+.calculator span.zero{
+	border-bottom-left-radius: 2vh;
 }
